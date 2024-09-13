@@ -67,6 +67,7 @@ export async function POST(req: Request) {
               controller.enqueue(text);
             } catch (error) {
               console.log("ERROR_START");
+              console.log(chunk.length);
               for (let i = 0; i < chunk.length; i++) {
                 console.log(chunk[i], chunk.charCodeAt(i));
               }
